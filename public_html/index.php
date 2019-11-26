@@ -1,15 +1,15 @@
-<h1>Hello Cloudreach!</h1>
-<h4>Attempting MySQL connection from php...</h4>
 <?php
-$host = 'mysql';
-$user = 'root';
-$pass = 'rootpassword';
-$conn = new mysqli($host, $user, $pass);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} else {
-    echo "Connected to MySQL successfully!";
-}
-
+   include('session.php');
 ?>
+<html">
+   
+   <head>
+      <title>Welcome </title>
+   </head>
+   
+   <body>
+      <h1>Welcome <?php echo $login_session; ?></h1> 
+      <h2><a href = "logout.php">Sign Out</a></h2>
+   </body>
+   
+</html>
