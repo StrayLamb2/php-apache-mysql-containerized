@@ -1,3 +1,42 @@
+Teacher's Site site: PHP/Apache/MySQL
+=====================================
+
+### How to run:
+To start the server containers for the first time:
+
+```
+$ docker-compose up --build
+```
+
+To start the server containers every other time:
+
+```
+$ docker-compose up
+```
+
+To close the server containers:
+
+```
+$ docker-compose down
+```
+
+To connect to the PHPMyAdmin page, go to **localhost:8183** and enter the credentials:
+
+> Server:       mysql
+
+> Username:     root
+
+> Password:     rootpassword
+
+From there you can create a Teacher to use the app.
+
+To connect to the site, go to **localhost:80**.
+
+-----------------------------------
+-- FORKED README --
+===================================
+-----------------------------------
+
 Containerize This: PHP/Apache/MySQL
 ===================================
 

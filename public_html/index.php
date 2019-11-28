@@ -1,15 +1,14 @@
 <?php
-   include('session.php');
+// Start Session
+session_start();
+// Check if user logged in
+if(isset($_SESSION['login_user'])){
+    // Redirect to teacher.php
+    header("location:teacher.php");
+    exit();
+}else{
+    // Else prompt to log in
+    header("location:login.php");
+    exit();
+}
 ?>
-<html">
-   
-   <head>
-      <title>Welcome </title>
-   </head>
-   
-   <body>
-      <h1>Welcome <?php echo $login_session; ?></h1> 
-      <h2><a href = "logout.php">Sign Out</a></h2>
-   </body>
-   
-</html>
