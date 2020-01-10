@@ -48,7 +48,7 @@ services:
       - mysql
     environment:
       MYSQL_ROOT_PASSWORD: "${DB_ROOT_PASSWORD}"
-      PMA_HOST: mysql
+      PMA_HOST: mysql 
       PMA_ARBITRARY: 1
     restart: always
     ports:
